@@ -1,0 +1,5 @@
+#!/bin/bash
+
+npm i -g @antfu/ni
+cp ./tools/makefile makefile
+make update
