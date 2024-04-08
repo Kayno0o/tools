@@ -1,14 +1,10 @@
 import antfu from '@antfu/eslint-config'
-import typescriptEslint from 'typescript-eslint'
 
 export default antfu({
   typescript: true,
   vue: true,
   formatters: {
     css: true,
-  },
-  plugins: {
-    '@typescript-eslint': typescriptEslint,
   },
   rules: {
     'node/prefer-global/process': 'off',

@@ -1,11 +1,12 @@
 #!/bin/bash
 
+# backup eslint config
+current_datetime=$(date +"%Y-%m-%d_%H:%M:%S")
+mv eslint.config.js "eslint.config.${current_datetime}.js"
+
 # copy files
 cp ./tools/eslint.config.js eslint.config.js
-cp ./tools/vscode ./vscode
+cp -r ./tools/.vscode ./.vscode
 
 # setup eslint
 ni -D eslint @antfu/eslint-config simple-git-hooks
-
-current_datetime=$(date +"%Y-%m-%d_%H:%M:%S")
-mv eslint.config.js "eslint.config.${current_datetime}.js"
