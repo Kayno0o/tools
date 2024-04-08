@@ -9,4 +9,4 @@ cp ./tools/eslint.config.js eslint.config.js
 cp -r ./tools/.vscode ./.vscode
 
 # setup eslint
-ni -D eslint @antfu/eslint-config simple-git-hooks
+ni -D eslint @antfu/eslint-config simple-git-hooks eslint-plugin-format
