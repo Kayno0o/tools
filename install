@@ -4,3 +4,4 @@ sudo npm i -g @antfu/ni
 cp ./tools/makefile makefile
 make update
 echo "tools" >> .gitignore
+echo ".backup_tools" >> .gitignore

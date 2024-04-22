@@ -4,7 +4,7 @@ cd tools ; git pull ; cd ..
 
 cp ./tools/makefile makefile
 
-backup_folder=".backup_tools_$(date +"%Y-%m-%d_%H:%M:%S")"
+backup_folder=".backup_tools/$(date +"%Y-%m-%d_%H:%M:%S")"
 mkdir -p "${backup_folder}"
 
 # backup eslint config
