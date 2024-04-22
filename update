@@ -9,10 +9,16 @@ mkdir -p "${backup_folder}"
 
 # backup eslint config
 mv eslint.config.js "${backup_folder}/eslint.config.js"
+mv package.json "${backup_folder}/package.json"
 
 # copy files
 cp ./tools/eslint.config.js eslint.config.js
 cp -r ./tools/.vscode ./.vscode
 
+# install node packages
+ni
+
 # setup eslint
 ni -D eslint @antfu/eslint-config simple-git-hooks eslint-plugin-format
+
+node mergejson.mjs ./package.json ./tools/package.json
